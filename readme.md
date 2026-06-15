@@ -60,7 +60,7 @@ Aplikasi ini dikembangkan menggunakan arsitektur *Decoupled Client-Server*, memi
 
 Jika ingin menjalankan atau mengembangkan proyek ini di lingkungan lokal (komputer), ikuti langkah-langkah berikut:
 
-1. **Kloning Repositori:**
+1. Kloning Repositori:
 ```bash
    git clone (https://github.com/permana191/adversarial-search-connect4)
    cd adversarial-search-connect4
