@@ -97,7 +97,10 @@ Plaintext
     └── /js
         └── script.js      # Pengendali DOM, Timer, Logging, dan Fetch API Asinkronus
 
+---
+
 ## 👨‍💻 Pengembang
+
 Sigit Miraj Permana S1 Teknik Informatika
 
 Fakultas Teknologi Informasi (FTI)
