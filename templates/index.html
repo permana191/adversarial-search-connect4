@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect 4 AI | Adversarial Search</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.4.0/dist/mermaid.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="glass-panel sidebar">
+            <h1>Connect 4 <span class="neon-text">AI</span></h1>
+            
+            <div class="top-dashboard">
+                <div class="score-board">
+                    <div class="score p1-score">P1 (Cyan): <span id="score-p1">0</span></div>
+                    <div class="score p2-score">P2/AI (Mag): <span id="score-p2">0</span></div>
+                </div>
+                <div class="timer-box">Time: <span id="game-timer">00:00</span></div>
+            </div>
+
+            <div id="status-indicator" class="status-box">Giliran P1 (Cyan)</div>
+            
+            <div class="control-group">
+                <label>Mode Permainan:</label>
+                <select id="game-mode" class="glass-select">
+                    <option value="pva">Player vs AI</option>
+                    <option value="pvp">Player vs Player</option>
+                </select>
+            </div>
+            
+            <div class="control-group">
+                <label>Kedalaman Minimax (Depth):</label>
+                <input type="number" id="depth-input" min="1" max="8" value="4">
+            </div>
+            
+            <div class="control-group switch-group">
+                <label>Alpha-Beta Pruning:</label>
+                <label class="switch">
+                    <input type="checkbox" id="pruning-toggle" checked>
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            
+            <div class="stats-box">
+                <p>Node Dievaluasi:</p>
+                <div class="counter-compare">
+                    <div class="count-mm">Murni:<br><span id="node-mm" class="neon-cyan">0</span></div>
+                    <div class="count-ab">Pruning:<br><span id="node-ab" class="neon-magenta">0</span></div>
+                </div>
+                <button id="view-tree-btn" class="glass-btn-tree">Buka Game Tree</button>
+            </div>
+
+            <button id="reset-btn" class="glass-btn">Restart Game</button>
+            <button id="reset-score-btn" class="glass-btn-danger">Reset Skor</button>
+        </div>
+
+        <div class="board-wrapper">
+            <div id="game-board" class="glass-board"></div>
+        </div>
+
+        <div class="glass-panel sidebar-right">
+            <h2>Live <span class="neon-text">Log</span></h2>
+            <div id="history-log" class="log-container"></div>
+        </div>
+    </div>
+
+    <div id="tree-modal" class="modal">
+        <div class="modal-content glass-panel">
+            <span class="close-btn">&times;</span>
+            <h2 style="text-align: center; margin-bottom: 20px;">Game Tree (Top 3 Levels)</h2>
+            <div style="overflow-x: auto; background: rgba(0,0,0,0.5); border-radius: 10px; padding: 20px;">
+                <div id="mermaid-container" class="mermaid">
+                    graph TD
+                    Root
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
