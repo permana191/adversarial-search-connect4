@@ -10,7 +10,7 @@ Repositori ini memuat implementasi sistem Kecerdasan Buatan (AI) pada permainan 
 
 Aplikasi ini dikembangkan menggunakan arsitektur *Decoupled Client-Server*, memisahkan logika komputasi berat di sisi peladen (Flask/Python) dan visualisasi antarmuka di sisi klien (HTML/CSS/Vanilla JS) untuk menjaga responsivitas interaksi secara *real-time*.
 
-🔗 **Live Deployment:** [https://adversarial-search-connect4.vercel.app](https://adversarial-search-connect4.vercel.app) *(Sesuaikan dengan URL Vercel milikmu)*
+🔗 **Live Deployment: https://www.sigit-connect4.my.id/
 
 ---
 
@@ -30,7 +30,6 @@ Aplikasi ini dikembangkan menggunakan arsitektur *Decoupled Client-Server*, memi
 Jika ingin menjalankan atau mengembangkan proyek ini di lingkungan lokal (komputer), ikuti langkah-langkah berikut:
 
 1. **Kloning Repositori:**
-```bash
    git clone # 🧠 Adversarial Search: Connect Four AI
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
@@ -43,10 +42,9 @@ Repositori ini memuat implementasi sistem Kecerdasan Buatan (AI) pada permainan 
 
 Aplikasi ini dikembangkan menggunakan arsitektur *Decoupled Client-Server*, memisahkan logika komputasi berat di sisi peladen (Flask/Python) dan visualisasi antarmuka di sisi klien (HTML/CSS/Vanilla JS) untuk menjaga responsivitas interaksi secara *real-time*.
 
-🔗 **Live Deployment:** [https://adversarial-search-connect4.vercel.app](https://adversarial-search-connect4.vercel.app) *(Sesuaikan dengan URL Vercel milikmu)*
+🔗 **Live Deployment:https://www.sigit-connect4.my.id/
 
----
-
+--
 ## ✨ Sorotan Fitur Utama
 
 * **🤖 Competitive AI Agent:** Algoritma mampu menganalisis status papan dan mengambil keputusan langkah matematis optimal untuk memaksimalkan utilitas (*maximizing the minimum possible payoff*).
@@ -64,7 +62,7 @@ Jika ingin menjalankan atau mengembangkan proyek ini di lingkungan lokal (komput
 
 1. **Kloning Repositori:**
 ```bash
-   git clone [https://github.com/sigitmiraj/adversarial-search-connect4.git](https://github.com/sigitmiraj/adversarial-search-connect4.git)
+   git clone (https://github.com/permana191/adversarial-search-connect4)
    cd adversarial-search-connect4
 Siapkan Lingkungan Virtual (Direkomendasikan):
 
